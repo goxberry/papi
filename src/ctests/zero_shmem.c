@@ -8,7 +8,9 @@
 #include <errno.h>
 #include <sys/types.h>
 #include <memory.h>
+#if !defined(__APPLE__)
 #include <malloc.h>
+#endif
 #include <pthread.h>
 
 #include "papi.h"

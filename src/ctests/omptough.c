@@ -1,6 +1,8 @@
 #include <pthread.h>
 #include <stdlib.h>
+#if !defined(__APPLE__)
 #include <malloc.h>
+#endif
 #include <unistd.h>
 #include <stdio.h>
 #include <omp.h>
