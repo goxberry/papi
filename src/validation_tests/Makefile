@@ -8,7 +8,7 @@ TESTLIB= $(testlibdir)/libtestlib.a
 DOLOOPS= $(testlibdir)/do_loops.o
 CLOCKCORE= $(testlibdir)/clockcore.o
 #EXTRALIB = -lrt
-EXTRALIB = -framework System
+EXTRALIB = -framework System -lomp
 
 include Makefile.recipies
 
