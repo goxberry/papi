@@ -6564,6 +6564,7 @@ elif test "$MAKEVER" = "darwin"; then
   CC_SHR='$(CC) -fPIC -DPIC -shared -Wl,-dylib -Xlinker "-rpath" -Xlinker "$(LIBDIR)"'
   SHLIB=libpapi.dylib
   OMPCFLGS="-Xpreprocessor -fopenmp"
+  LDFLAGS="$LDFLAGS -framework System -L/usr/local/lib -lomp"
 elif test "$MAKEVER" = "generic_platform"; then
   DESCR="Generic platform"
 fi
