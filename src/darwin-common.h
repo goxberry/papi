@@ -15,6 +15,10 @@ mygettid( void )
   return pthread_self();
 }
 
+#define PTRACE_TRACEME PT_TRACE_ME
+#define PTRACE_CONT PT_CONTINUE
+#define PTRACE_ATTACH PT_ATTACH
+
 long long _darwin_get_real_cycles( void );
 long long _darwin_get_virt_usec_times( void );
 long long _darwin_get_real_usec_gettimeofday( void );

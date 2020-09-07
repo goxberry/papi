@@ -22,6 +22,8 @@
 #include <sys/ptrace.h>
 #include <sys/wait.h>
 
+#include "darwin-common.h"
+
 #include "papi.h"
 #include "papi_test.h"
 
