@@ -23,6 +23,8 @@
 #include <sys/wait.h>
 #include <inttypes.h>
 
+#include "darwin-common.h"
+
 #include "papi.h"
 #include "papi_test.h"
 
